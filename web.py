@@ -14,7 +14,7 @@ st.write("Цей додаток для покращення власної пр�
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
-    print('checkbox',checkbox)
+
     if checkbox:
         todos.pop(index)
         functions.write_todos(todos)
@@ -28,6 +28,3 @@ st.text_input(label="Add todo",
               key='new_todo')
 
 
-print('Hello')
-
-st.session_state
